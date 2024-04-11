@@ -1,0 +1,5 @@
+Catamoto_constructor
+└── given token has been deployed
+    ├── it deploys token with given arguments
+    ├── it mints initialSupply
+    └── it grants default admin role to the sender

@@ -1,0 +1,14 @@
+{
+  "extends": "solhint:recommended",
+  "rules": {
+    "func-visibility": ["warn", { "ignoreConstructors": true }],
+    "code-complexity": ["warn", 7],
+    "func-param-name-mixedcase": "warn",
+    "modifier-name-mixedcase": "warn",
+    "named-parameters-mapping": "warn",
+    "named-return-values": "warn",
+    "private-vars-leading-underscore": ["warn"],
+    "ordering": "warn",
+    "quotes": "warn"
+  }
+}

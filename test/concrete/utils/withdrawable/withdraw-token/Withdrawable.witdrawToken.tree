@@ -1,0 +1,8 @@
+Withdrawable_withdrawToken
+├── when the caller is not authorized
+│   └── it reverts
+└── when the caller is authorized
+    ├── given recipient is zero address
+    │   └── it reverts
+    └── given recipient is non zero address
+        └── it withdraws token

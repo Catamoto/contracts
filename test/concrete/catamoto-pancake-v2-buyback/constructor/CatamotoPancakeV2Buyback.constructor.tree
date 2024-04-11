@@ -1,0 +1,11 @@
+CatamotoPancakeV2Buyback_constructor
+├── when token0 is zero address
+│   └── it reverts
+├── when middleman is zero address
+│   └── it reverts
+├── when token1 is zero address
+│   └── it reverts
+├── when router is zero address
+│   └── it reverts
+└── given token has been deployed
+    └── it deploys token with given arguments

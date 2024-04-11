@@ -1,0 +1,9 @@
+CatamotoPancakeV2Buyback_execute
+├── when caller is not authorized
+│   └── it reverts
+└── when caller is authorized
+    ├── when sender is authorized to bypass execution
+    │   └── it skips
+    └── when sender is not authorized to bypass execution
+        └── when token0 balance equals zero
+            └── it skips

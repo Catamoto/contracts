@@ -1,0 +1,5 @@
+Catamoto_consumer_transferFrom
+├── when tax 0 consumer reverts during transfer
+│   └── it transfers
+└── when tax 1 consumer reverts during transfer
+    └── it transfers

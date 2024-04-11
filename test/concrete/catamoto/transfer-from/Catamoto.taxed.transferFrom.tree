@@ -1,0 +1,22 @@
+Catamoto_taxed_transferFrom
+├── when caller is untaxed
+│   └── it transfers entire amount to the recipient
+├── when sender is untaxed
+│   └── it transfers entire amount to the recipient
+├── when recipient is untaxed
+│   └── it transfers entire amount to the recipient
+└── when caller is not untaxed
+    ├── when tax 0 consumer is zero address
+    │   ├── it transfers tax to the tax collector
+    │   └── it transfers reduced amount to the recipient
+    ├── when tax 0 consumer is non zero address
+    │   ├── it transfers tax to the tax collector
+    │   ├── it transfers tax to the tax consumer
+    │   └── it transfers reduced amount to the recipient
+    ├── when tax 1 consumer is zero address
+    │   ├── it transfers tax to the tax collector
+    │   └── it transfers reduced amount to the recipient
+    └── when tax 1 consumer is non zero address
+        ├── it transfers tax to the tax collector
+        ├── it transfers tax to the tax consumer
+        └── it transfers reduced amount to the recipient

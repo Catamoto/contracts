@@ -1,0 +1,13 @@
+Catamoto_updateSupervisedTransfersEndAt
+├── when caller is not authorized
+│   └── it reverts
+└── when caller is authorized
+    ├── when current value equals zero
+    │   ├── it emits event
+    │   └── it sets the new timestamp
+    └── when current value is non zero
+        ├── when block timestamp is before or equals current value
+        │   ├── it emits event
+        │   └── it sets the new timestamp
+        └── when block timestamp is after current value
+            └── it reverts

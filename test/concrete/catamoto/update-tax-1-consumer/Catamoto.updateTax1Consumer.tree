@@ -1,0 +1,13 @@
+Catamoto_updateTax1Consumer
+├── when the caller is not authorized
+│   └── it reverts
+└── when the caller is authorized
+    ├── when consumer address is zero address
+    │   └── it reverts
+    ├── when consumer address does not exists
+    │   └── it reverts
+    ├── when consumer does not implement required interface
+    │   └── it reverts
+    └── when consumer address is non zero address
+        ├── it emits event
+        └── it updates the consumer address

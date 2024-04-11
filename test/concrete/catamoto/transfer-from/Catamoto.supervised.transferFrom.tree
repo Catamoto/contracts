@@ -1,0 +1,16 @@
+Catamoto_supervised_transferFrom
+├── when supervised transfers end at timestamp equals zero
+│   └── it transfers
+└── when supervised transfers end at timestamp is non zero
+    ├── when block timestamp is before supervised transfers end at timestamp
+    │   ├── when caller is not authorized
+    │   │   └── it reverts
+    │   ├── when caller is authorized
+    │   │   └── it transfers
+    │   └── when sender is authorized
+    │       └── it transfers
+    └── when block timestamp is equals or after supervised transfers end at timestamp
+        ├── when caller does not have role that gives him authority
+        │   └── it transfers
+        └── when caller has role that gives him authority
+            └── it transfers
